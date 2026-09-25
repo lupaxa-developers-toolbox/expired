@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">expired</h1>
+<h1 align="center">Expired</h1>
 
 Tiny utility to check whether a timestamp has expired relative to the
 current UTC time. A value is expired when it is strictly earlier than

@@ -1,6 +1,6 @@
 # Examples
 
-## Filter a list
+## Filter a List
 
 ```python
 from lupaxa.expired import is_expired
@@ -13,7 +13,7 @@ timestamps = [
 expired_items = [item for item in timestamps if is_expired(item)]
 ```
 
-## Shared cutoff
+## Shared Cutoff
 
 Pin `now` so every item is judged against the same instant:
 
@@ -32,7 +32,7 @@ A three-day window against that same cutoff:
 stale = [item for item in dates if is_expired(item, days=3, now=cutoff)]
 ```
 
-## Custom format
+## Custom Format
 
 ```python
 from lupaxa.expired import is_expired
@@ -49,7 +49,7 @@ parse_datetime("2024/11/06 09:00:00", fmt="%Y/%m/%d %H:%M:%S")
 parse_datetime("06-11-2024", formats=("%d-%m-%Y",))
 ```
 
-## Handle bad input
+## Handle Bad Input
 
 ```python
 from lupaxa.expired import ParseError, is_expired
@@ -60,7 +60,7 @@ except ParseError as exc:
     print(f"Could not parse: {exc}")
 ```
 
-## Combined window
+## Combined Window
 
 ```python
 from datetime import datetime, timezone

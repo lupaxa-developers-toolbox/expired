@@ -1,4 +1,4 @@
-# expired
+# Expired
 
 Tiny utility to check whether a timestamp has expired relative to UTC now.
 
@@ -21,7 +21,7 @@ expired --time "2022-10-19 14:43:57.563803"
 expired --version
 ```
 
-## What counts as expired
+## What Counts as Expired
 
 `is_expired(when)` compares `when` to `(now - delta)`:
 
@@ -33,7 +33,7 @@ expired --version
 
 That is the same rule the CLI uses.
 
-## What you get
+## What You Get
 
 -   A boolean library API (`is_expired`) plus helpers to parse timestamps
     and build windows
@@ -41,10 +41,3 @@ That is the same rule the CLI uses.
 -   A small CLI with stdout `expired` / `not expired` and exit codes for
     scripts
 -   Python 3.10+, no runtime dependencies
-
-## Next steps
-
-- [Getting started](getting-started.md) — install and first checks
-- [Usage](usage.md) — library options and CLI flags
-- [Reference](reference.md) — public API and exit codes
-- [Examples](examples.md) — copy-paste recipes

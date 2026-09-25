@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 ## Requirements
 
@@ -15,7 +15,7 @@ The PyPI name is `lupaxa-expired`. The import path is `lupaxa.expired`.
 The console script is `expired`. `lupaxa` is a namespace package — there
 is no `lupaxa/__init__.py`.
 
-### From source (development)
+### From Source (Development)
 
 ```bash
 make init
@@ -29,7 +29,7 @@ After makefile-skills are installed:
 make mkdocs-serve
 ```
 
-## First check
+## First Check
 
 A timestamp is expired when it is strictly earlier than
 `(now - delta)`. With no window, that is UTC now:
@@ -64,7 +64,7 @@ expired --time "2022-10-19 14:43:57.563803"
 The CLI prints `expired` or `not expired` and exits `1` or `0`. Exit `2`
 means the timestamp could not be parsed or `--time` was missing.
 
-## Add a window
+## Add a Window
 
 Keyword parts (or `--days` and friends on the CLI) subtract a window from
 now before comparing:
@@ -85,7 +85,7 @@ expired --time "2022-10-19 14:43:57.563803" --days 3
 Years are 365 days and months are 30 days. See [Usage](usage.md) for the
 full set of parts and flags.
 
-## Makefile helpers
+## Makefile Helpers
 
 ```bash
 make init                 # clone makefile-skills into .makefiles/

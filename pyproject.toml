@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "lupaxa-expired"
 dynamic = ["version"]
 description = "Tiny utility to check whether a timestamp has expired relative to UTC now."
-readme = "README-PYPI.md"
+readme = "README.md"
 license = { file = "LICENCE" }
 requires-python = ">=3.10"
 
@@ -66,7 +66,6 @@ path = "src/lupaxa/expired/version.py"
 include = [
   "src/**",
   "README.md",
-  "README-PYPI.md",
   "LICENCE",
 ]
 

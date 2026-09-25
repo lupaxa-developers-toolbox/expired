@@ -100,7 +100,7 @@ The CLI is installed as `expired`.
 | `--version`   | Print `expired x.y.z` and exit `0`           |
 | `--help`      | Show argparse help                           |
 
-### Exit codes
+### Exit Codes
 
 | Code | Meaning                                      |
 | ---- | -------------------------------------------- |

@@ -1,6 +1,6 @@
 # Usage
 
-## How comparison works
+## How Comparison Works
 
 `is_expired(when)` returns `True` when `when < (now - delta)`.
 
@@ -15,7 +15,7 @@
 
 ## Library
 
-### Compare to UTC now
+### Compare to UTC Now
 
 ```python
 from lupaxa.expired import is_expired
@@ -23,7 +23,7 @@ from lupaxa.expired import is_expired
 is_expired("2022-10-19 14:43:57.563803")
 ```
 
-### Use a window
+### Use a Window
 
 Pass a `timedelta` or keyword parts. Parts are ignored when `delta=` is
 set. `fmt` is a parse format, not a delta part.
@@ -51,7 +51,7 @@ except ExpiredError:
     print("Unknown delta part")
 ```
 
-### Pin the reference time
+### Pin the Reference Time
 
 ```python
 from datetime import datetime, timezone
@@ -62,7 +62,7 @@ is_expired("2025-10-01", now=cutoff)
 is_expired("2025-10-01", days=3, now=cutoff)
 ```
 
-### Custom parse format
+### Custom Parse Format
 
 ```python
 is_expired("2025/11/01 14:43:57", fmt="%Y/%m/%d %H:%M:%S", days=2)
@@ -99,7 +99,7 @@ expired --help
 `--years`, `--months`, `--weeks`, `--days`, `--hours`, `--minutes`,
 `--seconds`. Months are 30 days; years are 365 days.
 
-### Output and exit codes
+### Output and Exit Codes
 
 | Result              | Stdout           | Exit |
 | ------------------- | ---------------- | ---- |
