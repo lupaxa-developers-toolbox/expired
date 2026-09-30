@@ -35,8 +35,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://expired.thelupaxaproject.org/"
-Documentation = "https://expired.thelupaxaproject.org/"
+Homepage = "https://github.com/lupaxa-developers-toolbox/expired"
+Documentation = "https://github.com/lupaxa-developers-toolbox/expired"
 Repository = "https://github.com/lupaxa-developers-toolbox/expired"
 Issues = "https://github.com/lupaxa-developers-toolbox/expired/issues"
 
@@ -51,8 +51,6 @@ dev = [
   "mypy>=1.12.0",
   "hatch>=1.12.0",
   "bump-my-version>=1.2.0",
-  "mkdocs==1.6.1",
-  "mkdocs-material==9.7.7",
 ]
 test = [
   "pytest>=8.0",
